@@ -1,4 +1,4 @@
-package com.me.bui.instantsearch;
+package com.me.bui.instantsearch.view;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,6 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import com.me.bui.instantsearch.R;
+import com.me.bui.instantsearch.view.LocalSearchActivity;
+import com.me.bui.instantsearch.view.RemoteSearchActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -29,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btn_local_search)
     public void openLocalSearch() {
         // launching local search activity
-//        startActivity(new Intent(MainActivity.this, LocalSearchActivity.class));
+        startActivity(new Intent(MainActivity.this, LocalSearchActivity.class));
     }
 
     @OnClick(R.id.btn_remote_search)
     public void openRemoteSearch() {
         // launch remote search activity
-//        startActivity(new Intent(MainActivity.this, RemoteSearchActivity.class));
+        startActivity(new Intent(MainActivity.this, RemoteSearchActivity.class));
     }
 
     private void whiteNotificationBar(View view) {
